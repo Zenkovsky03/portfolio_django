@@ -1,0 +1,40 @@
+.navigation-bar{
+  background-color: #1F2428;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+.nav-link{
+  color: #fff;
+}
+.hero{
+  background-color:#1F2428 ;
+  height: 80vh;
+  color: #fff;
+}
+#profile-pic{
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+.hero--content{
+  margin: 0 auto;
+  width: 800px;
+  padding-top: 3em;
+}
+.hero--content--intro{
+  display: flex;
+  color: #fff;
+  align-items: center;
+  gap: 1em;
+  justify-content: center;
+}
+.intro--name{
+  font-size: 80px;
+}
+.description{
+  font-size: 48px;
+}
+.slogan{
+  font-size: 28px;
+}
