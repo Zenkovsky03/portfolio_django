@@ -9,7 +9,7 @@
 }
 .hero{
   background-color:#1F2428 ;
-  height: 80vh;
+  height: 70vh;
   color: #fff;
 }
 #profile-pic{
@@ -26,15 +26,40 @@
   display: flex;
   color: #fff;
   align-items: center;
-  gap: 1em;
+  gap: 2em;
   justify-content: center;
+  margin-bottom: 3em;
 }
 .intro--name{
-  font-size: 80px;
+  font-size: 100px;
+  letter-spacing: .1em;
+  font-weight: 700;
 }
 .description{
-  font-size: 48px;
+  font-size: 65px;
+  text-align: center;
 }
 .slogan{
-  font-size: 28px;
+  font-size: 24px;
+  text-align: center;
+}
+.project--thumbnail{
+  width: 100%;
+}
+/* .project--column{
+
+} */
+.projects--wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
+  margin-top: 2em;
+}
+.project--body{
+  background-color: #fff;
+  padding:1em;
+  margin-bottom: 2em;
+}
+body{
+  background-color: #e5e5e5 !important;
 }
