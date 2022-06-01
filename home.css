@@ -1,5 +1,5 @@
 .navigation-bar{
-  background-color: #1F2428;
+  background-color: #354955;
   height: 50px;
   display: flex;
   justify-content: center;
@@ -16,6 +16,7 @@
   height: 200px;
   width: 200px;
   object-fit: cover;
+  border-radius: 50%;
 }
 .hero--content{
   margin: 0 auto;
@@ -62,4 +63,35 @@
 }
 body{
   background-color: #e5e5e5 !important;
+}
+.section--1{
+  background-color: #fff;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.section--2{
+  background-color: #e5e5e5;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.skills--container{
+  width: 600px;
+  margin: 0 auto;
+}
+.skill--wrapper{
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+@media (max-width:900px){
+  .hero--content--intro{
+    flex-direction: column;
+  }
+  .projects--wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
 }
