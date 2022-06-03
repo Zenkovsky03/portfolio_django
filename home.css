@@ -9,7 +9,7 @@
 }
 .hero{
   background-color:#1F2428 ;
-  height: 70vh;
+  min-height: 70vh;
   color: #fff;
 }
 #profile-pic{
@@ -77,21 +77,44 @@ body{
 .skills--container{
   width: 600px;
   margin: 0 auto;
+  padding: 1em;
 }
 .skill--wrapper{
   margin-top: 2em;
   margin-bottom: 2em;
 }
+.skill--tag{
+  background-color: #c4e7f2;
+  width: fit-content;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
+
+.other--skills--wrapper{
+  display: flex;
+  gap: 1em;
+}
+
 
 @media (max-width:900px){
   .hero--content--intro{
     flex-direction: column;
   }
   .projects--wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2em;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    grid-template-columns: 1fr;
   }
 }
+
+@media (max-width:600px){
+  .skills--container{
+    width: 100%;
+  }
+}
+
+@media (max-width:800px){
+  .hero--content{
+    width: 100%;
+  }
+
+}
+
