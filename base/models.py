@@ -1,3 +1,4 @@
+from contextlib import nullcontext
 from tkinter.tix import Tree
 from django.db import models
 import uuid
@@ -5,8 +6,8 @@ import uuid
 
 class Project(models.Model):
   title = models.CharField(max_length=200)
-  # thumbnail = models.ImageField()
-  body = models.TextField()
+  thumbnail = models.ImageField(null=True)
+  body = models.TextField(null=True)
   slug = models.SlugField(null=True, blank=True)
   created = models.DateTimeField(auto_now_add=True)
   id = models.UUIDField(default=uuid.uuid4, unique=True, primary_key=True, editable=True)
@@ -16,7 +17,7 @@ class Project(models.Model):
 
 class Skill(models.Model):
   title = models.CharField(max_length=200)
-  body = models.TextField()
+  body = models.TextField(null=True)
   created = models.DateTimeField(auto_now_add=True)
   id = models.UUIDField(default=uuid.uuid4, unique=True, primary_key=True, editable=True)
 
@@ -24,7 +25,7 @@ class Skill(models.Model):
     return self.title
 
 class Tag(models.Model):
-  name = models.CharField(max_length=200)
+  name = models.CharField(max_length=200, null=True)
   created = models.DateTimeField(auto_now_add=True)
   id = models.UUIDField(default=uuid.uuid4, unique=True, primary_key=True, editable=True)
 

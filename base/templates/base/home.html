@@ -41,26 +41,16 @@
     <h3>My Projects</h3>
     <h5>Projects that makes me journey worthwhile</h5>
     <div class="projects--wrapper">
+      {% for project in projects %}
       <div class="project--column">
-        <img class="project--thumbnail" src="{% static 'images/project--image.png'%}" alt="first project">
+        <img class="project--thumbnail" src="{{ project.thumbnail.url }}" alt="first project">
         <div class="project--body">
-            <h5>First Project</h5>
+            <h5>{{project.title }}</h5>
         </div>
       </div>
-
-      <div class="project--column">
-        <img class="project--thumbnail" src="{% static 'images/project--image.png'%}" alt="second project">
-        <div class="project--body">
-          <h5>Second Project</h5>
-        </div>
-      </div>
-
-      <div class="project--column">
-        <img class="project--thumbnail" src="{% static 'images/project--image.png'%}" alt="third project">
-        <div class="project--body">
-          <h5>Third Project</h5>
-        </div>
-      </div>
+      {% empty %}
+      <h3>There is no project in databse </h3>
+      {% endfor %}
     </div>
 
     <div class="about--wrapper">
