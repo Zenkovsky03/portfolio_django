@@ -1,5 +1,5 @@
 .navigation-bar{
-  background-color: #354955;
+  background-color: red;
   height: 50px;
   display: flex;
   justify-content: center;
@@ -47,9 +47,6 @@
 .project--thumbnail{
   width: 100%;
 }
-/* .project--column{
-
-} */
 .projects--wrapper{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -94,7 +91,6 @@ body{
   display: flex;
   gap: 1em;
 }
-
 
 @media (max-width:900px){
   .hero--content--intro{
